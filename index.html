@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVEL</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="index.css">
+    
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><span>SAGST</span>ravel</a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#book">book</a>
+        <a href="#packages">packages</a>
+        <a href="#services">services</a>
+        <a href="#gallery">places</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+        
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- login form container  -->
+
+<div class="login-form-container">
+
+    <i class="fas fa-times" id="form-close"></i>
+    
+<section>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="box">
+        
+    </div>
+</section>
+<div id='login-form'class='login-page'>
+    <div class="form-box">
+        <div class='button-box'>
+            <div id='btn'></div>
+            <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+            <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+        </div>
+        <form id='login' class='input-group-login'>
+        <input type='text'class='input-field'placeholder='Email Id' required >
+        <input type='password'class='input-field'placeholder='Enter Password' required>
+        <input type='checkbox'class='check-box'><span>Remember Password</span>
+        <button type='submit'class='submit-btn'>Log in</button>
+        <h2><p class="forget">Forget Password? <a href="#">Click Here</a></p></h2>
+        </form>
+        <form id='register' class='input-group-register'>
+        <input type='text'class='input-field'placeholder='Name' required>
+    
+        <input type='email'class='input-field'placeholder='Email Id' required>
+        <input type='password'class='input-field'placeholder='Enter Password' required>
+        <input type='password'class='input-field'placeholder='Confirm Password'  required>
+        <input type='checkbox'class='check-box'><span>I agree to the terms and conditions</span>
+        <button type='submit'class='submit-btn'>Register</button>
+        </form>
+    </div>
+</div>
+</div>
+
+    
+    
+
+  
+
+
+
+
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Let’s get lost</h3>
+        <p>Jobs fill your pocket, but adventures fill your soul</p>
+        <a href="#" class="btn">discover more</a>
+    </div>
+
+    <div class="controls">
+        <span class="vid-btn active" data-src="images/beach2.mp4"></span>
+        
+        <span class="vid-btn" data-src="images/mounten1.mp4"></span>
+        <span class="vid-btn" data-src="images/bridge1.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-5.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-2.mp4"></span>
+    </div>
+
+    <div class="video-container">
+        <video src="images/beach2.mp4" id="video-slider" loop autoplay muted></video>
+       
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- book section starts  --
+
+<section class="book" id="book">
+
+    <h1 class="heading">
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/trav1.jpg" alt="">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <h3>where to</h3>
+                <input type="text" placeholder="place name">
+            </div>
+            <div class="inputBox">
+                <h3>how many</h3>
+                <input type="number" placeholder="number of guests">
+            </div>
+            <div class="inputBox">
+                <h3>arrivals</h3>
+                <input type="date">
+            </div>
+            <div class="inputBox">
+                <h3>leaving</h3>
+                <input type="date">
+            </div>
+            <input type="submit" class="btn" value="book now">
+        </form>
+
+    </div>
+
+</section>
+
+<!-- book section ends -->
+
+<!-- packages section starts  -->
+
+<section class="packages" id="packages">
+
+    <h1 class="heading">
+        <span>p</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/kamar1.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i><a href="https://www.google.com/maps/place/Kamarpukur+Math+Ramkrishna/@22.9075866,87.6519724,17z/data=!3m1!4b1!4m5!3m4!1s0x39f8192e50e43b19:0x73518f6c9cfb44fc!8m2!3d22.9075817!4d87.6541611"> KAMARPUKUR </a> </h3>
+                <p><a href="https://www.nativeplanet.com/kamarpukur/#overview">Visit kamarpukur</a></p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+              <!--  <div class="price"> $90.00 <span>$120.00</span> </div>
+                <a href="#" class="btn">book now</a>-->
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/MA1.webp" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i><a href="https://www.google.com/maps/place/Sri+Sri+Matri+Mandir,+Joyrambati/@22.9246672,87.6088643,17z/data=!3m1!4b1!4m5!3m4!1s0x39f81ed0325aba7d:0x44d3d12b98a2353d!8m2!3d22.9246534!4d87.611093"> JAIRAMBATI</a>  </h3>
+                <p><a href="https://www.google.com/search?q=JAIRAMBATI+tourist+spot&oq=
+                    JAIRAMBATI+tourist+spot+&aqs=chrome..69i57j69i59.9321j1j15&sourceid=chrome&ie=UTF-8">
+                    Visit Jairambati</a></p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+               <!---<div class="price"> $90.00 <span>$120.00</span> </div>
+                <a href="#" class="btn">book now</a>-->
+            </div>
+        </div>
+
+
+        <div class="box">
+            <img src="images/Banalata1.jpeg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i><a href="https://www.google.com/maps/place/Banalata+Resort/@23.0534784,87.4319964,17z/data=!3m1!4b1!4m8!3m7!1s0x39f78c38dcd42987:0x6eb43d83a79b31b0!5m2!4m1!1i2!8m2!3d23.0534735!4d87.4341851"> BANALOTA </a> </h3>
+                <p><a href="https://banalata.com/">Visit Banalata</a></p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+             <!---  <div class="price"> $90.00 <span>$120.00</span> </div>
+                <a href="#" class="btn">book now</a>-->
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/cot1.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i><a href="https://www.google.com/maps/place/Moulisha+Resort+Joypur+Bankura/@23.0612319,87.4344288,17z/data=!3m1!4b1!4m5!3m4!1s0x39f78db31b9cb64b:0x6d43bf2a76b4ce91!8m2!3d23.061227!4d87.4366175"> MOULISHA </a></h3>
+                <p><a href="https://nexttripbooking.com/homestay/bishnupur/moulisha_resort_joypur">Visit Moulisha</a></p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+              <!-- <div class="price"> $90.00 <span>$120.00</span> </div>
+                <a href="#" class="btn">book now</a>-->
+            </div>
+        </div>
+
+
+
+        <div class="box">
+            <img src="images/bono1.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i><a href="https://www.google.com/maps/place/Banphool/@23.05,87.432443,17z/data=!3m1!4b1!4m5!3m4!1s0x39f78c12ffffffff:0x4c1d857c1b740057!8m2!3d23.0499951!4d87.4346317"> BONOPHOOL </a></h3>
+                <p><a href="https://www.bankuratourism.com/hotels/banphool-tree-house/">Visit Bonophool</a></p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <!--<div class="price"> $90.00 <span>$120.00</span> </div>
+                <a href="#" class="btn">book now</a> -->
+            </div>
+        </div>
+
+
+        <div class="box">
+            <img src="images/hotel1.webp" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i><a href="https://www.google.com/maps/place/Hotel+Annapurna/@23.0657821,87.3220007,17z/data=!3m1!4b1!4m8!3m7!1s0x39f793c35fcca219:0xdde34ecc60f4fe37!5m2!4m1!1i2!8m2!3d23.0657772!4d87.3241894"> Annapurna </a></h3>
+                <p><a href="http://annapurnahotel.in/">Visit Annapurna</a></p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+              <!--  <div class="price"> $90.00 <span>$120.00</span> </div>
+                <a href="#" class="btn">book now</a>-->
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- packages section ends -->
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+    <h1 class="heading">
+        <span>s</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>affordable hotels</h3>
+            <p></p>
+        </div>
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+            <h3>food and drinks</h3>
+            <p></p>
+        </div>
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>safety guide</h3>
+            <p></p>
+        </div>
+        <div class="box">
+            <i class="fas fa-globe-asia"></i>
+            <h3>around the world</h3>
+            <p></p>
+        </div>
+        <div class="box">
+            <i class="fas fa-plane"></i>
+            <h3>fastest travel</h3>
+            <p></p>
+        </div>
+        <div class="box">
+            <i class="fas fa-hiking"></i>
+            <h3>adventures</h3>
+            <p></p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- gallery section starts  -->
+
+<section class="gallery" id="gallery">
+
+    <h1 class="heading">
+        <span>p</span>
+        
+        <span>l</span>
+        <span>a</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+        
+    </h1>
+
+    <div class="box-container">
+
+
+
+        <div class="box">
+            <img src="images/ras.jpg" alt="">
+            <div class="content">
+                <h3>Rasmancha(1600)</h3>
+               
+                <p>Built by King Bir Hambir. The temple has an unusual elongated pyramidical tower, surrounded by hut-shaped turrets.</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+         </div>
+
+        <div class="box">
+            <img src="images/jor1.jpg" alt="">
+            <div class="content">
+                <h3>Jor-Bangla Temple(1655)</h3>
+                <p>Built by King Raghunath Singha Dev II. The ornate terracotta carvings are set off by the roof in the classic chala style of Bengal architecture.</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/pancha2.jpg" alt="">
+            <div class="content">
+                <h3>Pancha Ratna Temple(1643)</h3>
+                <p>Built by King Raghunath Singha.The walls are richly decorated with terracotta carvings featuring aspects of Lord Krishna’s life.</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/modanmahan.jpg" alt="">
+            <div class="content">
+                <h3>Madanmohan Temple(1694)</h3>
+                <p>Built by King Durjana Singh Deva in the ekaratna style.Impressive carvings on the walls depict scenes from the Ramayana, Mahabharata and the Puranas.</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/lalji.jpg" alt="">
+            <div class="content">
+                <h3>Lalji Temple(1658)</h3>
+                <p>Built by Bir Singha II in ekaranta style. It is built on a square raised plinth, consisting of ornamental stucco decorations on low relief carvings</p>
+                    <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/radhashyam.jpg" alt="">
+            <div class="content">
+                <h3>Radhya Shyam temple(1758)</h3>
+                <p>Built by Chaitanya Singha in ekaratna style.</p>
+                    <a href="#" class="btn">see more</a>
+            </div>
+         </div>
+        <div class="box">
+            <img src="images/nandalal.jpg" alt="">
+            <div class="content">
+                <h3>Nandalal Temple(17th Century)</h3>
+                    <p>Consisting of a square ground plan and a single tower resting on a curved roof. Very little motif work can be seen on the lower part of the temple.</p>
+                    <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/kalachad.jpg" alt="">
+            <div class="content">
+                <h3>Kalachand temple(1656)</h3>
+                <p>Built by King Raghunath Singha in ekratna style with laterite stone.</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+            </div>
+        <div class="box">
+            <img src="images/chinnamasta.jpg" alt="">
+            <div class="content">
+                <h3>Chhinnamasta Temple()</h3>
+                <p>Built by the Guin family of Midnapore.</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/jor2].jpg" alt="">
+            <div class="content">
+                <h3>Jor Mandir (Twin Temples)(1726)</h3>
+                <p>A complex of three temples known as the Jor Mandir. These temples were built by Malla King Krishna Singh</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/shyamrai.jpg" alt="">
+            <div class="content">
+                <h3>Shyam Rai(1643)</h3>
+                <p>Shyam Rai Temple was built by King Raghunath Singha in the year 1643 AD</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/radhagobinda.jpg" alt="">
+            <div class="content">
+                <h3>Radha Govinda Temple(1729)</h3>
+                <p>Built by Krishna Singh, son of Gopal Singha in ekratna style with laterite.</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+
+
+
+        <div class="box">
+            <img src="images/kaman1.jpg" alt="">
+            <div class="content">
+                <h3>Dalmadal Kaman Canon</h3>
+                <p>Dal Madal was made by Jagannath Karmakar."Dal Madal" means "destruction of enemy"</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/mamrinmoyee.jpg" alt="">
+            <div class="content">
+                <h3>Ma Mrinmoyee Mandir</h3>
+                <p>King Jagat Malla established the Mrinmoyee temple in 997 AD. Actually, Jagat Malla was ordered by Maa Mrinmoyee to build this temple, in his dreams. The idol is made of Ganga clay.</p>
+                <a href="http://www.bangalinet.com/durga_temples_mrinmoyee.html" class="btn">see more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/lalbadh1.jpg" alt="">
+            <div class="content">
+                <h3>Lalbadh</h3>
+                <p>Bir Singh built the Lalbandh in 1658. Lakes were made for drinking water and to protect the town from enemy</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+
+
+        <div class="box">
+            <img src="images/lalgarh.jpg" alt="">
+            <div class="content">
+                <h3>Lalgarh Eco Park</h3>
+                <p>Lalgarh was a famous fort built during the Malla Kings in the name of one court dancer "Lal Bye" who later turned 2nd wife of a Malla King.</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/gate1.jpg" alt="">
+            <div class="content">
+                <h3>Gate of Old Fort</h3>
+                <p>This gate is the entrance of the Malla Raja's kingdom. near 17th century</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+
+       
+       
+
+
+        <div class="box">
+            <img src="images/animal1.jpg" alt="">
+            <div class="content">
+                <h3>Joypur Forest</h3>
+                <p>Staying in an exceedingly dense jungle with noticed elephant herds crossing the lush forest-path</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/jung1.jpg" alt="">
+            <div class="content">
+                <h3>Joypur Forest</h3>
+                <p>Joypur forest is thickly forest stippled with skyscraping Sal, Palash, Kusum, Mahua, Neem and Teak trees, which does not allow the daring sunlight to touch the bottom at some places.</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/animal2.jpg" alt="">
+            <div class="content">
+                <h3>Joypur Forest</h3>
+                <p>The clam forest is not only famous for visual pleasure, many tropical crippling birds will smoother your ears too. The main habitants of this wildlife sanctuary are Cheetal (spotted dear), wild fox, wolf and elephants'</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+</section>
+
+<!-- gallery section ends -->
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading">
+        <span>r</span>
+        <span>e</span>
+        <span>v</span>
+        <span>i</span>
+        <span>e</span>
+        <span>w</span>
+    </h1>
+
+    <div class="swiper-container review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/roy.jpg" alt="">
+                    <h3>MR. ROY</h3>
+                    <p>ki boss valo to</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/LALU.jpg" alt="">
+                    <h3>ASISH PAL</h3>
+                    <p></p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/aad.jpg" alt="">
+                    <h3>AADARSHA SENGUPTA</h3>
+                    <p></p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/SAG.jpg" alt="">
+                    <h3>SAGHY</h3>
+                    <p></p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+    
+    <h1 class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/contract.jpg" alt="">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="email">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="number">
+                <input type="text" placeholder="subject">
+            </div>
+            <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn" value="send message">
+        </form>
+
+    </div>
+    
+</section>
+
+<!-- contact section ends -->
+
+<!-- brand section  
+<section class="brand-container">
+
+    <div class="swiper-container brand-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/5.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/6.jpg" alt=""></div>
+        </div>
+    </div>
+
+</section>-->
+
+<!-- footer section  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>about us</h3>
+            <p>I help to find the places near bankura, bishnupur and kamarpukur</p>
+        </div>
+        <div class="box">
+            <h3>branch locations</h3>
+            <a href="#">india</a>
+            <a href="#">USA</a>
+            <a href="#">japan</a>
+            <a href="#">france</a>
+        </div>
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#home">home</a>
+            <a href="#book">book</a>
+            <a href="#packages">packages</a>
+            <a href="#services">services</a>
+            <a href="#gallery">places</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </div>
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">twitter</a>
+            <a href="#">linkedin</a>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> created by <span> MR. SAGHY </span> | all rights reserved! </h1>
+
+</section>
+
+
+<script>
+    var x=document.getElementById('login');
+    var y=document.getElementById('register');
+    var z=document.getElementById('btn');
+    function register()
+    {
+        x.style.left='-400px';
+        y.style.left='50px';
+        z.style.left='110px';
+    }
+    function login()
+    {
+        x.style.left='50px';
+        y.style.left='450px';
+        z.style.left='0px';
+    }
+</script>
+<script>
+    var modal = document.getElementById('login-form');
+    window.onclick = function(event) 
+    {
+        if (event.target == modal) 
+        {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+
+
+</body>
+</html>
